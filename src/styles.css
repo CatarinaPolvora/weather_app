@@ -14,13 +14,18 @@ img {
   position: relative;
   top: 10px;
 }
+h2 {
+  color: #006ec5;
+  font-weight: bold;
+  font-size: 30px;
+}
 h3 {
   position: relative;
   top: 15px;
   text-transform: capitalize;
   color: #525252;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 22px;
   margin-bottom: 20px;
 }
 span {
@@ -29,11 +34,6 @@ span {
   font-size: 15px;
 }
 
-h2 {
-  color: #006ec5;
-  font-weight: bold;
-  font-size: 30px;
-}
 p {
   color: #006ec5;
   font-weight: bold;
