@@ -45,22 +45,22 @@ function insertCity(city) {
   axios.get(apiUrl).then(showTemperature);
 }
 function showTemperature(response) {
-  let iconElement = document.querySelector("#icon");
   let temperature = Math.round(response.data.main.temp);
   let actualTemp = document.querySelector("#temperature");
   actualTemp.innerHTML = `${temperature}°C`;
-  iconElement.setAttribute(
-    "src",
-    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
-  );
 }
 
 function showWeather(response) {
+  let iconElement = document.querySelector("#icon");
   let temperature = Math.round(response.data.main.temp);
   let h1 = document.querySelector("h1");
   let h2 = document.querySelector("#temperature");
   h1.innerHTML = `${response.data.name}`;
   h2.innerHTML = `${temperature}°`;
+  iconElement.setAttribute(
+    "src",
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function showPosition(position) {
