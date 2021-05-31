@@ -45,9 +45,14 @@ function insertCity(city) {
   axios.get(apiUrl).then(showTemperature);
 }
 function showTemperature(response) {
+  let iconElement = document.querySelector("#icon");
   let temperature = Math.round(response.data.main.temp);
   let actualTemp = document.querySelector("#temperature");
   actualTemp.innerHTML = `${temperature}°C`;
+  iconElement.setAttribute(
+    "src",
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function showWeather(response) {

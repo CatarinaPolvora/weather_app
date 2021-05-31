@@ -49,3 +49,8 @@ button {
   margin-bottom: 30px;
   color: #006ec5;
 }
+
+#temperature {
+  position: relative;
+  top: 24px;
+}
