@@ -48,6 +48,17 @@ function showTemperature(response) {
   let iconElement = document.querySelector("#icon");
   let temperature = Math.round(response.data.main.temp);
   let actualTemp = document.querySelector("#temperature");
+  let weatherDescription = response.data.weather[0].description;
+  let windSpeed = Math.round(response.data.wind.speed);
+  let humidity = response.data.main.humidity;
+  let currentWeather = document.querySelector("#weather-description");
+  currentWeather.innerHTML = weatherDescription;
+
+  let currentWindSpeed = document.querySelector("#wind");
+  currentWindSpeed.innerHTML = `Wind: ${windSpeed}km/h`;
+
+  let currentHumidity = document.querySelector("#humidity");
+  currentHumidity.innerHTML = `Humidity: ${humidity}%`;
   actualTemp.innerHTML = `${temperature}°C`;
   iconElement.setAttribute(
     "src",
@@ -58,6 +69,17 @@ function showTemperature(response) {
 function showWeather(response) {
   let iconElement = document.querySelector("#icon");
   let temperature = Math.round(response.data.main.temp);
+  let weatherDescription = response.data.weather[0].description;
+  let windSpeed = Math.round(response.data.wind.speed);
+  let humidity = response.data.main.humidity;
+  let currentWeather = document.querySelector("#weather-description");
+  currentWeather.innerHTML = weatherDescription;
+
+  let currentWindSpeed = document.querySelector("#wind");
+  currentWindSpeed.innerHTML = `Wind: ${windSpeed}km/h`;
+
+  let currentHumidity = document.querySelector("#humidity");
+  currentHumidity.innerHTML = `Humidity: ${humidity}%`;
   let h1 = document.querySelector("h1");
   let h2 = document.querySelector("#temperature");
   h1.innerHTML = `${response.data.name}`;
