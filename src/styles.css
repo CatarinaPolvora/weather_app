@@ -9,6 +9,11 @@ h1 {
   padding-top: 50px;
   color: #006ec5;
 }
+
+img {
+  position: relative;
+  top: 10px;
+}
 h3 {
   position: relative;
   top: 15px;
