@@ -28,8 +28,14 @@ span {
   font-weight: bold;
   font-size: 15px;
 }
+
+h2 {
+  color: #006ec5;
+  font-weight: bold;
+  font-size: 30px;
+}
 p {
-  color: #42a5f5;
+  color: #006ec5;
   font-weight: bold;
   font-size: 25px;
 }
@@ -66,7 +72,8 @@ button {
 }
 .row {
   margin-bottom: 30px;
-  color: #006ec5;
+  color: #104b99;
+  font-weight: bold;
 }
 
 #temperature {
