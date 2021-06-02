@@ -80,3 +80,27 @@ button {
   position: relative;
   top: 22px;
 }
+
+.weather-forecast {
+  font-weight: bold;
+  
+  text-align: center;
+  color: #104b99;
+}
+
+.weather-forecast-date {
+  font-size: 20px;
+ 
+}
+
+
+.weather-forecast-temperature-max {
+  font-size: 18px;
+  color: #104b99;
+}
+
+.weather-forecast-temperature-min {
+
+  font-size: 18px;
+  color: #104b99;
+}
