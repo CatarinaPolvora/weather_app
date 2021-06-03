@@ -66,7 +66,7 @@ function showTemperature(response) {
     "src",
     `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
- 
+ getForecast(response.data.coord);
 }
 
 function showWeather(response) {
@@ -151,4 +151,4 @@ function getForecast(coordinates) {
   axios.get(apiUrl).then(displayForecast);
 }
 
-search("New York");
+search("Lisbon");
