@@ -58,7 +58,7 @@ button {
   padding: 10px 40px;
   border-radius: 3%;
   box-shadow: rgb(36 37 90 / 8%) 0px 8px 8px 0;
-  background: linear-gradient(to bottom, #d2d7db 0%, #8a8b8d 100%);
+  background: linear-gradient(to bottom, #d2d7db 0%, #8eb7e1 100%);
   opacity: 70%;
   color: white;
 }
@@ -85,22 +85,25 @@ button {
   font-weight: bold;
   
   text-align: center;
-  color: #104b99;
+  color: #192c58;
 }
 
 .weather-forecast-date {
   font-size: 20px;
+  color: #192c58;
+  
  
 }
 
 
 .weather-forecast-temperature-max {
   font-size: 18px;
-  color: #104b99;
+  color: #192c58;
+  
 }
 
 .weather-forecast-temperature-min {
 
   font-size: 18px;
-  color: #104b99;
+  color: #192c58;
 }
